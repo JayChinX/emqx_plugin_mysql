@@ -1,0 +1,10 @@
+{application, emqx_plugin_mysql,
+  [{description, "EMQ X Plugin Mysql"},
+    {vsn, "1.0.0"},
+    {modules, []},
+    {registered, [emqx_plugin_mysql_sup]},
+    {applications, [kernel, stdlib, mysql, ecpool, clique]},
+    {mod, {emqx_plugin_mysql_app, []}},
+    {env, []},
+    {licenses, ["Apache-2.0"]}
+  ]}.
